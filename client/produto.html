@@ -1,0 +1,24 @@
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+  
+  <input type="text" placeholder="Cadastrar Produto" id="name">
+  <button id="add">Cadastrar</button>
+
+  <div>
+    {{#each produtos}}
+      <p>
+        {{ name }}
+        <button class="remove" data-index="{{ @index }}">X</button>
+      </p>
+    {{/each}}
+  </div>
+</template>
