@@ -1,0 +1,47 @@
+﻿Instalar vscode (https://code.visualstudio.com/)
+    - Abrir projeto pelo terminal: code . (na pasta do projeto)
+
+Instalar git (https://git-scm.com/download/win)
+    - Tudo "next"
+
+Instalar chocolatery (https://chocolatey.org/install)
+    - Abrir prompt como administrador
+    - Rodar o comando: @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+    ---
+    Limpar cache: choco upgrade all 
+
+Instalar meteor
+    - Rodar o comando (prompt admin): choco install meteor
+
+Instalar node (https://nodejs.org/en/)
+    - Tudo "next"
+
+Instalar meteor manualmente:
+    - Baixar o arquivo: https://packages.meteor.com/bootstrap-link?arch=os.windows.x86_64
+    - Extrair os arquivos em:  %LocalAppData%\.meteor (tomar cuidado para nao duplicar o .meteor)
+    - Configurar variável de ambiente com o caminho do (colocar caminho completo): %LocalAppData%\.meteor
+
+Instalar JDK (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+    - Tudo "next"
+
+Instalar Android Studio (https://developer.android.com/studio/index.html?hl=pt-br)
+    - Tudo "next"
+    - Executar pela primeira vez e instalar a SDK 26 (Meteor 1.6.1)
+    
+    ---
+    A SDK pode ser adicionada futuramente também pelo SDK manager:
+        - Abra o android studio
+        - Clique em Configure e depois em SDK manager
+        - Selecione as SDKs desejadas e clique em apply
+
+Extensões do vscode:
+    - Eclipse Keymap
+
+Correção de bug (Error: Cannot find module 'dezalgo') na hora de rodar o projeto no dispositivo
+    - Pelo terminal, ir ao diretório: %USERPROFILE%\AppData\Local\.meteor\packages\meteor-tool\1.6.1\mt-os.windows.x86_64\dev_bundle\lib\node_modules\cordova-lib
+    - Rodar o comando: npm i 
+
+Conteúdo:
+    https://www.youtube.com/user/LevelUpTuts/videos
+    https://www.youtube.com/watch?v=9494-2E4riQ
