@@ -45,3 +45,16 @@ Correção de bug (Error: Cannot find module 'dezalgo') na hora de rodar o proje
 Conteúdo:
     https://www.youtube.com/user/LevelUpTuts/videos
     https://www.youtube.com/watch?v=9494-2E4riQ
+
+Comandos meteor:
+- Antes de rodar o meteor, adicionar plataforma:
+    meteor add-platform (android ou ios)
+
+- Rodar meteor no celular (USB):
+    meteor run android-device
+
+- Rodar meteor navegador:
+    meteor run
+
+- Abrir mongo:
+    meteor mongo
